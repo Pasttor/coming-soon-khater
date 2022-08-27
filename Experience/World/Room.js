@@ -32,7 +32,10 @@ export default class Room {
 
     setModel(){
         //positioning logo
-        this.actualLogo.position.set(0, 0, 0)
+        this.actualLogo.position.set(0, 0.1, 0)
+        this.actualLogo.children[1].rotation.x = Math.PI / 2 * 3
+        this.actualLogo.children[0].rotation.z = Math.PI / 2 
+        
 
         this.actualLogo.children.forEach((child) => {
             child.castShadow = true;
