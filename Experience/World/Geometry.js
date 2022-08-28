@@ -44,9 +44,9 @@ export default class Geometry {
 
 
     setGeometry() {
-        this.geometry1 = new THREE.IcosahedronGeometry( 0.3, 1,);
-        this.geometry3 = new THREE.IcosahedronGeometry( 0.5, 1,);
-        this.geometry2 = new THREE.IcosahedronGeometry( 0.2, 1,);
+        this.geometry1 = new THREE.IcosahedronGeometry( 0.3, 0,);
+        this.geometry3 = new THREE.IcosahedronGeometry( 0.5, 0,);
+        this.geometry2 = new THREE.IcosahedronGeometry( 0.2, 0,);
 
         this.material = new THREE.MeshStandardMaterial({
             flatShading : true,
@@ -54,8 +54,11 @@ export default class Geometry {
 
 
         this.material.color = new THREE.Color(0xFFFFFF)
-        this.material.metalness = 0.7
-        this.material.roughness = 1
+        this.material.metalness = 0.258
+        this.material.roughness = 0
+        
+/*         this.material.metalness = 0.7
+        this.material.roughness = 1 */
 
         // RightMesh
         this.sphere = new THREE.Mesh(this.geometry1, this.material)

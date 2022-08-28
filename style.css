@@ -20,10 +20,11 @@ h1{
   -webkit-text-fill-color: transparent;
 }
 h2{
-  font-size: 1.9em;
-  font-weight: 600;
+  font-size: 1.6em;
+  font-weight: 100;
+  letter-spacing: 0.1em;
   color: rgba(0, 0, 0, 0.9);
-  margin-bottom: 6%;
+  margin-bottom: 3%;
 }
 h3{
   font-size: 0.6em;
@@ -161,8 +162,10 @@ h4 {
   color: black;
   display: flex;
   justify-content: space-evenly;
-  text-align: center;
-  column-gap: 9%;
+  /* align-content: center; */
+  /* justify-content: center; */
+  /*text-align: center;*/
+  column-gap: 30%;
 }
 
 .day,
@@ -193,4 +196,10 @@ h4 {
 span {
   overflow: hidden;
   display: block;
+}
+.fb {
+  /* max-height: 13px; */
+}
+.mail {
+ /*  width: 21px; */
 }
