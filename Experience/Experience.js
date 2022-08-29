@@ -31,6 +31,7 @@ export default class Experience {
 		this.world = new World();
 		this.preloader = new Preloader();
 
+		//onload
 		window.onload = () => {
 			const cursor = new Cursor(document.querySelector('.cursor'))
 		}
