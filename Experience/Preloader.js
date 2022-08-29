@@ -1,6 +1,5 @@
 import {EventEmitter} from "events";
 import Experience from "./Experience.js";
-import Room from "./World/Room.js";
 import GSAP from "gsap";
 
 
@@ -41,7 +40,7 @@ export default class Preloader extends EventEmitter{
         
         this.svgi = document.getElementById("svgi");
         
-        console.log(this.logoRing);
+        
         this.tl = new GSAP.timeline({defaults: { ease: 'easeOutQuart', duration: '0.6'}});
         this.curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
         this.flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";

@@ -5,11 +5,13 @@ import Time from "./Utils/Time.js";
 import Resources from "./Utils/Resources.js";
 import assets from "./Utils/assets.js";
 
+import Cursor from "./Cursor.js";
 import Camera from "./Camera.js";
 import Renderer from "./Renderer.js";
 import Preloader from "./Preloader";
 
 import World from "./World/World.js";
+
 
 export default class Experience { 
 	static instance 
@@ -23,10 +25,15 @@ export default class Experience {
 		this.time = new Time();
 		this.sizes = new Sizes();
 		this.camera = new Camera();
+		
 		this.renderer = new Renderer();
 		this.resources = new Resources(assets);
 		this.world = new World();
 		this.preloader = new Preloader();
+
+		window.onload = () => {
+			const cursor = new Cursor(document.querySelector('.cursor'))
+		}
 
 		this.sizes.on("resize", ()=> {
 			this.resize();

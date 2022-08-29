@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import Experience from "./Experience.js";
 
-export default class Rebderer { 
+export default class Renderer { 
     constructor() {
         this.experience = new Experience();
         this.sizes = this.experience.sizes;

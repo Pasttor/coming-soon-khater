@@ -3,6 +3,7 @@ import Experience from "../Experience.js";
 
 import Room from "./Room.js";
 import Geometry from "./Geometry.js";
+/* import Cursor from "./Cursor.js"; */
 import Controls from "./Controls.js";
 import Environment from "./Environment.js";
 import { EventEmitter } from "events";
@@ -21,6 +22,7 @@ export default class World extends EventEmitter {
             this.environment = new Environment();
             this.room = new Room();
             this.geometry = new Geometry();
+            /* this.cursor = new Cursor(); */
             
             this.controls = new Controls();
             this.emit('worldready');
