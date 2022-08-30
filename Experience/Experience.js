@@ -33,6 +33,7 @@ export default class Experience {
 
 		//onload
 		window.onload = () => {
+
 			const cursor = new Cursor(document.querySelector('.cursor'))
 		}
 
@@ -46,6 +47,7 @@ export default class Experience {
 
 	   }
 
+
 	   
 	   resize () {
 		this.camera.resize();
@@ -54,6 +56,8 @@ export default class Experience {
 	   }
 
 	   update() {
+        
+
 		this.camera.update();
 		this.world.update();
 		this.renderer.update();
