@@ -186,6 +186,7 @@ h4 {
 .hero{
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 .hero-wrapper{  
   display: flex;
@@ -194,6 +195,7 @@ h4 {
   height: 100%;
   width: calc(100% - 90px);
   margin: 0 auto;
+  overflow: hidden;
 }
 .title{
   margin-bottom: 1%;
@@ -245,4 +247,10 @@ h4 {
 span {
   overflow: hidden;
   display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-main{
+    bottom: 7%;
+}
 }

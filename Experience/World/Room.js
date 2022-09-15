@@ -14,8 +14,6 @@ export default class Room {
         this.logo = this.resources.items.logo;
         this.actualLogo = this.logo.scene;
 
-        
-
         this.lerp = {
             current: 0, 
             target: 0, 
@@ -26,7 +24,7 @@ export default class Room {
         //console.log(this.actualLogo)
 
         this.setModel();
-        this.setAnimation();
+        //this.setAnimation();
         this.onMouseMove();
     }
 
@@ -76,8 +74,6 @@ export default class Room {
     }
 
 
-    setAnimation(){}
-
     onMouseMove(){ 
         window.addEventListener("pointermove", (e) => {
             //console.log(e)
@@ -88,6 +84,8 @@ export default class Room {
         })
         
     }
+
+
     resize() {}
 
     update() {
@@ -102,6 +100,7 @@ export default class Room {
 
 
         this.actualLogo.children[1].rotation.y += 0.0006
-    
+
+
     }
 }

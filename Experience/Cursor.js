@@ -66,12 +66,13 @@ export default class Cursor {
     }
 
     onMouseMoveEnter = () => {
-        console.log("onMouseMoveEnter...")
+        //console.log("onMouseMoveEnter...")
         this.Cursor.classList.remove(".hiden");
     }
 
     onMouseMoveLeave = () => {
-        console.log("onMouseMoveleave...")
+        //console.log("onMouseMoveleave...")
+        this.Cursor.classList.remove(".cursor");
         this.Cursor.classList.add(".hiden");
     }
 
@@ -86,7 +87,7 @@ export default class Cursor {
         // Loop through all items
         this.Item.forEach((link) => {
             // If I am hovering on the item for on page load I want to scale the cursor media
-             if (link.matches(":hover")) {
+            if (link.matches(":hover")) {
             
                 this.ScaleCursor(this.Cursor.children[0], 0.8);
             }  

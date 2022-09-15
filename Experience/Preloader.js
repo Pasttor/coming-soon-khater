@@ -64,13 +64,13 @@ export default class Preloader extends EventEmitter{
             opacity: 0,
         }, 'same-s');
         this.tl.to(this.svgi, {
-            duration: 0.9,
+            duration: 0.6,
             attr: { d: this.curve },
-            //ease: "power2.easeIn",
+            ease: "power2.easeIn",
         }).to(this.svgi, {
-            duration: 0.9,
+            duration: 0.6,
             attr: { d: this.flat },
-            //ease: "power2.easeOut",
+            ease: "power2.easeOut",
         });
         this.tl.to(".loader-wrap", {
         y: -1500,
